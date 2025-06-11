@@ -1,0 +1,1484 @@
+@charset "UTF-8";
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ■ ■ ■ PC ■ ■ ■ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Noto Serif JP", serif;
+  background-color: #000;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+/* 各コンテンツタイトル */
+.inner-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 70px 72px 100px;
+  margin: 0 auto;
+}
+
+/* ロゴマーク */
+.logo-mark {
+  width: 120px;
+  height: 120px;
+  margin: 0 0 24px;
+}
+
+/* ロゴ店名 */
+.logo-name {
+  width: 120px;
+  height: auto;
+}
+
+/* ページトップに戻るボタン */
+#page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-size: 0.875rem;
+  line-height: 1;
+  z-index: 99;
+}
+
+#page-top a {
+  background: #e2d8be;
+  color: #000;
+  font-weight: bold;
+  width: 60px;
+  padding: 23px 5px;
+  text-align: center;
+  display: block;
+  border-radius: 90px;
+  opacity: 0.9;
+  transition: all .3s ease;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+
+/* ------------------------------------------ */
+/* ヘッダー */
+/* ------------------------------------------ */
+#header .inner-wrapper {
+  background-image: url(../image/main.jpg);
+  height: 950px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .header-info ul {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+#header .header-info li {
+  margin: 0 12px;
+  font-size: 1.25rem;
+}
+
+#header .header-info .tel {
+  font-size: 1.75rem;
+}
+
+#header .header-info img {
+  background-size: 150px 150px;
+  background-color: #e2d8be;
+  border-radius: 50%;
+}
+
+#header .header-info img:hover {
+  opacity: 0.7;
+}
+
+#header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+/* ------------------------------------------ */
+/* セクション　おすすめ日本酒 */
+/* ------------------------------------------ */
+#sake .inner-wrapper {
+  background-image: url(../image/sake.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sake .inner-wrapper p {
+  display: inline-block;
+  width: 650px;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 50px 72px;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+#sake .section-title {
+  width: 120px;
+  height: 480px;
+  margin: 50px 0 0 100px;
+}
+
+/* ------------------------------------------ */
+/* セクション　こだわり */
+/* ------------------------------------------ */
+#kodawari .inner-wrapper {
+  height: 550px;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.6) 52%, transparent), url(../image/sashimi_01.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+#kodawari .section-title {
+  width: 280px;
+  height: auto;
+  margin: 0 0 72px;
+}
+
+#kodawari .inner-wrapper p {
+  display: inline-block;
+  width: 500px;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+}
+
+
+/* ------------------------------------------ */
+/* セクション　おしらせ */
+/* ------------------------------------------ */
+#news .inner-wrapper {
+  background-color: #f0ffff;
+  height: 550px;
+  color: #000;
+  padding: 0 72px;
+}
+
+#news .section-title {
+  width: 200px;
+  margin: 0 auto;
+  padding: 72px 0 30px 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+}
+
+#news .slick-slider {
+  width: 100%;
+  padding: 0 72px;
+}
+
+#news .news-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  padding: 0 36px 0 16px;
+  border-right: 1px solid #000;
+}
+
+#news .news-list time {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 0 0 16px;
+  padding: 24px 0 0;
+}
+
+#news .news-list p {
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+}
+
+
+/* ------------------------------------------ */
+/* セクション　コースメニュー */
+/* ------------------------------------------ */
+.course-menu .inner-wrapper {
+  height: 200px;
+  background-image: url(../image/wood-texture01.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+
+.course-menu .section-title {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------ */
+/* セクション　コース料理 */
+/* ------------------------------------------ */
+#course .course-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#course .course-item-kawa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+}
+
+#course .course-item-kawa .course-img {
+  margin: 0 16px 0 0;
+}
+
+#course .course-item-umi .course-img {
+  margin: 0 0 0 16px;
+}
+
+#course .course-list img {
+  width: 600px;
+  height: 400px;
+  margin: 0 0 70px;
+}
+
+#course .course-title-hirakawa img {
+  width: 550px;
+  height: 45px;
+  margin: 0 0 30px;
+}
+
+#course .course-title-hiraumi img {
+  width: 450px;
+  height: 45px;
+  margin: 0 0 30px;
+}
+
+#course .course-list .course-text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#course .course-text p {
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  margin: 0 0 40px;
+}
+
+#course .course-text .price {
+  margin: 0 0 16px 0;
+}
+
+#course .course-text .price span {
+  font-size: 1.75rem;
+  margin: 0 8px 0 0;
+}
+
+#course .course-text .text {
+  font-size: 0.875rem;
+}
+
+#course .course-item-umi {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#course .course-other {
+  margin: 30px 0 0;
+  padding: 0 0 0 48%;
+}
+
+/* ------------------------------------------ */
+/* セクション　一品料理 */
+/* ------------------------------------------ */
+#ippin .inner-wrapper {
+  height: 900px;
+  background-color: aliceblue;
+  color: #000;
+}
+
+#ippin .inner-wrapper .section-title {
+  display: block;
+  margin: 0 auto 24px;
+  ;
+  width: 220px;
+}
+
+#ippin .title-text {
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+#ippin .food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#ippin .food-img {
+  position: relative;
+  width: 65%;
+  height: 100vh;
+}
+
+#ippin .food-img-tomato {
+  width: 480px;
+  height: 320px;
+}
+
+#ippin .food-img-egg {
+  width: 320px;
+  height: 400px;
+  position: absolute;
+  top: 180px;
+  left: 420px;
+  z-index: 50;
+}
+
+#ippin .food-list {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#ippin .food-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px
+}
+
+#ippin .food-item dt {
+  width: 65%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+}
+
+#ippin .food-item dd {
+  width: 35%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+#ippin .food-list p {
+  font-size: 0.875rem;
+}
+
+/* ------------------------------------------ */
+/* セクション　のみもの */
+/* ------------------------------------------ */
+#drink .inner-wrapper {
+  background-color: gray;
+  height: 650px;
+}
+
+#drink .inner-wrapper .section-title {
+  display: block;
+  margin: 0 auto 24px;
+  ;
+  width: 200px;
+}
+
+#drink .drink-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#drink .drink-menu .drink-img {
+  width: 50%;
+}
+
+#drink .drink-menu .drink-img img {
+  width: 100%;
+}
+
+#drink .drink-menu .drink-list {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 36px;
+}
+
+#drink .drink-menu .drink-list p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+#drink .drink-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+
+#drink .drink-item dt {
+  width: 65%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+}
+
+#drink .drink-item dd {
+  width: 35%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+/* ------------------------------------------ */
+/* フッター */
+/* ------------------------------------------ */
+#footer .inner-wrapper {
+  background-image: url(../image/yakei.jpg);
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer .restaurant-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#footer .info-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.85);
+}
+
+#footer .info-text dt {
+  width: 25%;
+  padding: 0 0 20px;
+  margin: 0 0 10px;
+  letter-spacing: 0.08em;
+}
+
+#footer .info-text dd {
+  width: 75%;
+  padding: 0 0 20px;
+  margin: 0 0 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+#footer .map iframe {
+  width: 600px;
+  height: 400px;
+  margin: 0 0 60px;
+}
+
+#footer .copyright {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ■ ■ ■ タブレット ■ ■ ■ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+@media screen and (max-width: 960px) {
+
+  /* 各コンテンツタイトル */
+  body {
+    font-size: 1rem;
+  }
+
+  .inner-wrapper {
+    width: 100%;
+    max-width: 960px;
+    padding: 64px 36px 90px;
+    margin: 0 auto;
+  }
+
+  /* ロゴマーク */
+  .logo-mark {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 24px;
+  }
+
+  /* ロゴ店名 */
+  .logo-name {
+    width: 100px;
+    height: auto;
+  }
+
+  /* ------------------------------------------ */
+  /* ヘッダー */
+  /* ------------------------------------------ */
+  #header .inner-wrapper {
+    /* background-image: url(../image/main.jpg); */
+    height: 650px;
+    /* background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative; */
+  }
+
+  #header .header-info ul {
+    /* display: flex;
+  align-items: center;
+  position: fixed; */
+    padding: 8px;
+    /* z-index: 100; */
+  }
+
+  #header .header-info li {
+    margin: 0 8px;
+    font-size: 0.875rem;
+  }
+
+  #header .header-info .tel {
+    font-size: 1.375rem;
+    /* これ有効化できてない */
+    /* mix-blend-mode: difference; */
+  }
+
+  /* #header .header-info img {
+  background-size: 150px 150px;
+  background-color:#e2d8be;
+  border-radius: 50%;
+} */
+
+  /* #header .header-info img:hover {
+  opacity: 0.7;
+} */
+
+  /* #header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} */
+
+  /* ------------------------------------------ */
+  /* セクション　おすすめ日本酒 */
+  /* ------------------------------------------ */
+  #sake .inner-wrapper {
+    /* background-image: url(../image/sake.jpg); */
+    height: 450px;
+    /* background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  }
+
+  #sake .inner-wrapper p {
+    /* display: inline-block;
+  width: 650px;
+  background-color: rgba(0, 0, 0, 0.55); */
+    padding: 40px 64px;
+    /* letter-spacing: 0.2em;
+  line-height: 1.5; */
+  }
+
+  #sake .section-title {
+    width: 100px;
+    height: 400px;
+    /* margin: 50px 0 0 100px; */
+  }
+
+  /* ------------------------------------------ */
+  /* セクション　こだわり */
+  /* ------------------------------------------ */
+  #kodawari .inner-wrapper {
+    height: 450px;
+    /* background-image: linear-gradient(90deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.6) 52%, transparent),url(../image/sashimi_01.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative; */
+  }
+
+  #kodawari .section-title {
+    width: 230px;
+    /* height: auto; */
+    margin: 50px 0 50px;
+  }
+
+  #kodawari .inner-wrapper p {
+    /* display: inline-block; */
+    width: 400px;
+    /* letter-spacing: 0.18em;
+  line-height: 1.5; */
+  }
+
+
+  /* ------------------------------------------ */
+  /* セクション　おしらせ */
+  /* ------------------------------------------ */
+  #news .inner-wrapper {
+    /* background-color:#f0ffff; */
+    height: 450px;
+    /* color:#000;
+  padding: 0 72px; */
+  }
+
+  #news .section-title {
+    width: 160px;
+    /* margin: 0 auto;
+  padding: 72px 0 30px 0; */
+  }
+
+  /* .slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+} */
+
+  #news .slick-slider {
+    /* width: 100%; */
+    padding: 0 40px;
+  }
+
+  #news .news-list {
+    /* display: flex;
+  flex-direction: column;
+  width: 100%; */
+    height: 250px;
+    padding: 0 24px 0 16px;
+    /* border-right: 1px solid #000; */
+  }
+
+  /* #news .news-list time {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 0 0 16px;
+  padding: 24px 0 0;
+} */
+
+  /* #news .news-list p {
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+} */
+
+
+  /* ------------------------------------------ */
+  /* セクション　コースメニュー */
+  /* ------------------------------------------ */
+  .course-menu .inner-wrapper {
+    height: 160px;
+    /* background-image: url(../image/wood-texture01.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover; */
+  }
+
+  .course-menu .section-title {
+    /* display: block; */
+    width: 250px;
+    /* margin: 0 auto; */
+  }
+
+
+  /* ------------------------------------------ */
+  /* セクション　コース料理 */
+  /* ------------------------------------------ */
+  /* #course .course-list {
+  display: flex;
+  flex-direction: column;
+} */
+
+  /* #course .course-item-kawa {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  /* margin: 0 auto 100px; */
+  /* }  */
+
+  #course .course-list img {
+    width: 400px;
+    height: auto;
+    /* margin: 0 auto 30px; */
+  }
+
+  #course .course-title-hirakawa img {
+    width: 350px;
+    height: 40px;
+    margin: 0 0 16px;
+  }
+
+  #course .course-title-hiraumi img {
+    width: 300px;
+    height: 40px;
+    margin: 0 0 16px;
+  }
+
+  /* #course .course-list .course-text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+} */
+
+  #course .course-text p {
+    /* letter-spacing: 0.18em;
+  line-height: 1.5; */
+    margin: 0 0 24px;
+  }
+
+  #course .course-text .price {
+    margin: 0 0 8px 0;
+  }
+
+  #course .course-text .price span {
+    font-size: 1.675rem;
+    /* margin: 0 8px 0 0; */
+  }
+
+  /* #course .course-text .text {
+  font-size: 0.875rem;
+} */
+
+  /* #course .course-item-umi {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+} */
+
+  #course .course-other {
+    /* margin: 30px 0 0; */
+    padding: 0;
+  }
+
+  /* ------------------------------------------ */
+  /* セクション　一品料理 */
+  /* ------------------------------------------ */
+  #ippin .inner-wrapper {
+    height: 850px;
+    /* background-color:aliceblue;
+  color:#000; */
+  }
+
+  #ippin .inner-wrapper .section-title {
+    /* display: block; */
+    margin: 0 auto 16px;
+    ;
+    width: 160px;
+  }
+
+  #ippin .title-text {
+    margin: 0 0 24px;
+    /* text-align: center; */
+  }
+
+  /* #ippin .food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+
+  #ippin .food-img {
+    position: static;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #ippin .food-img-tomato {
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px;
+  }
+
+  #ippin .food-img-egg {
+    width: 100%;
+    position: static;
+    /* top: 150px;
+  left: 250px;
+  z-index: 50; */
+  }
+
+  #ippin .food-list {
+    width: 58%;
+    /* display: flex;
+  flex-direction: column; */
+  }
+
+  /* #ippin .food-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px
+} */
+
+  #ippin .food-item dt {
+    /* width: 65%; */
+    padding: 0 0 4px;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em; */
+  }
+
+  #ippin .food-item dd {
+    /* width: 35%; */
+    padding: 0 0 4px;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right; */
+  }
+
+  /* #ippin .food-list p {
+  font-size: 0.875rem;
+} */
+
+  /* #ippin .btn {
+  display: none;
+} */
+
+  /* ------------------------------------------ */
+  /* セクション　のみもの */
+  /* ------------------------------------------ */
+  #drink .inner-wrapper {
+    /* background-color:gray; */
+    height: 500px;
+  }
+
+  #drink .inner-wrapper .section-title {
+    /* display: block; */
+    margin: 0 auto 16px;
+    ;
+    width: 160px;
+  }
+
+  /* #drink .drink-menu {
+  display: flex;
+  justify-content: space-between;
+} */
+
+  #drink .drink-menu .drink-img {
+    width: 40%;
+  }
+
+  #drink .drink-menu .drink-img img {
+    width: 100%;
+  }
+
+  #drink .drink-menu .drink-list {
+    width: 58%;
+    /* display: flex;
+  flex-direction: column; */
+    margin: 0 0 0 16px;
+  }
+
+  #drink .drink-menu .drink-list p {
+    /* font-size: 0.875rem;
+  line-height: 1.5; */
+    margin: 0 0 16px;
+  }
+
+  /* #drink .drink-item {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+} */
+  /* 
+#drink .drink-item dt {
+  width: 65%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+}
+
+#drink .drink-item dd {
+  width: 35%;
+  padding: 0 0 8px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right;
+} */
+
+  /* ------------------------------------------ */
+  /* フッター */
+  /* ------------------------------------------ */
+  #footer .inner-wrapper {
+    /* background-image: url(../image/yakei.jpg); */
+    height: 930px;
+    /* background-repeat: no-repeat;
+  background-size: cover; */
+  }
+
+  /* たてにならない */
+  #footer .restaurant-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px dotted green;
+  }
+
+  #footer .info-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.85);
+    border: 1px dotted red;
+  }
+
+  #footer .info-text dt {
+    width: 25%;
+    padding: 0 0 20px;
+    letter-spacing: 0.08em;
+  }
+
+  #footer .info-text dd {
+    width: 65%;
+    padding: 0 0 20px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+  }
+
+  #footer .map  {
+    width: 50%;
+    margin: 0 0 50px;
+  }
+
+  #footer .map iframe {
+    width: 100%;
+  }
+
+
+  /* #footer .copyright {
+  font-size: 0.625rem;
+  text-align:center;
+} */
+
+}
+
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ■ ■ ■ モバイル ■ ■ ■ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+@media screen and (max-width: 768px) {
+
+  /* 各コンテンツタイトル */
+  body {
+    font-size: 1rem;
+  }
+
+  .inner-wrapper {
+    /* width: 100%; */
+    max-width: 768px;
+    padding: 36px 16px 72px;
+    /* margin: 0 auto; */
+  }
+
+  /* ロゴマーク */
+  .logo-mark {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 16px;
+  }
+
+  /* ロゴ店名 */
+  .logo-name {
+    width: 80px;
+    /* height: auto; */
+  }
+
+  /* ------------------------------------------ */
+  /* ヘッダー */
+  /* ------------------------------------------ */
+  #header .inner-wrapper {
+    /* background-image: url(../image/main.jpg); */
+    height: 650px;
+    /* background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative; */
+  }
+
+  #header .header-info ul {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* これ有効化できてない */
+    justify-content: flex-start;
+    /* position: fixed; */
+    /* padding: 8px; */
+    /* z-index: 100; */
+  }
+
+  #header .header-info li {
+    margin: 4px 0;
+    /* font-size: 0.875rem; */
+  }
+
+  /* #header .header-info .tel {
+  font-size: 1.375rem;
+  これ有効化できてない */
+  /* mix-blend-mode: difference;
+} */
+
+  /* #header .header-info img {
+  background-size: 150px 150px;
+  background-color:#e2d8be;
+  border-radius: 50%;
+} */
+
+  /* #header .header-info img:hover {
+  opacity: 0.7;
+} */
+
+
+  #header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ------------------------------------------ */
+  /* セクション　おすすめ日本酒 */
+  /* ------------------------------------------ */
+  /* #sake .inner-wrapper { */
+  /* background-image: url(../image/sake.jpg); */
+  /* height: 450px; */
+  /* background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* } */
+
+  #sake .inner-wrapper p {
+    /* display: inline-block;
+  width: 650px;
+  background-color: rgba(0, 0, 0, 0.55); */
+    padding: 24px 32px;
+    /* letter-spacing: 0.2em;
+  line-height: 1.5; */
+  }
+
+  #sake .section-title {
+    width: 120px;
+    height: 350px;
+    margin: 40px 0 0 16px;
+  }
+
+  /* ------------------------------------------ */
+  /* セクション　こだわり */
+  /* ------------------------------------------ */
+  /* #kodawari .inner-wrapper {
+  height: 450px; */
+  /* background-image: linear-gradient(90deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.6) 52%, transparent),url(../image/sashimi_01.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative; */
+  /* } */
+
+  #kodawari .section-title {
+    width: 200px;
+    /* height: auto; */
+    margin: 50px 0 50px;
+  }
+
+  #kodawari .inner-wrapper p {
+    /* display: inline-block; */
+    width: 100%;
+    /* letter-spacing: 0.18em;
+  line-height: 1.5; */
+  }
+
+
+  /* ------------------------------------------ */
+  /* セクション　おしらせ */
+  /* ------------------------------------------ */
+  #news .inner-wrapper {
+    /* background-color:#f0ffff; */
+    height: 450px;
+    /* color:#000;
+  padding: 0 72px; */
+  }
+
+  #news .section-title {
+    width: 130px;
+    /* margin: 0 auto;
+  padding: 72px 0 30px 0; */
+  }
+
+  /* .slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+} */
+
+  /* #news .slick-slider {
+  width: 100%;
+  padding: 0 40px;
+} */
+
+  #news .news-list {
+    /* display: flex;
+  flex-direction: column;
+  width: 100%; */
+    height: 250px;
+    padding: 0 24px 0 16px;
+    /* border-right: 1px solid #000; */
+  }
+
+  /* #news .news-list time {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin: 0 0 16px;
+  padding: 24px 0 0;
+} */
+
+  /* #news .news-list p {
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+} */
+
+
+  /* ------------------------------------------ */
+  /* セクション　コースメニュー */
+  /* ------------------------------------------ */
+  .course-menu .inner-wrapper {
+    height: 100px;
+    /* background-image: url(../image/wood-texture01.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover; */
+  }
+
+  .course-menu .section-title {
+    /* display: block; */
+    width: 200px;
+    /* margin: 0 auto; */
+  }
+
+
+  /* ------------------------------------------ */
+  /* セクション　コース料理 */
+  /* ------------------------------------------ */
+  /* #course .course-list {
+  display: flex;
+  flex-direction: column;
+} */
+
+  #course .course-item-kawa {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* これきいてない */
+    justify-content: center;
+    margin: 0 0 36px;
+    border: 1px dotted red;
+  }
+
+  #course .course-list img {
+    width: 100%;
+    /* height: auto; */
+    margin: 0 0 30px;
+    border: 1px dotted blue;
+  }
+
+  #course .course-title-hirakawa img {
+    width: 100%;
+    /* height: 40px;
+  margin: 0 0 16px; */
+  }
+
+  #course .course-title-hiraumi img {
+    width: 100%;
+    /* height: 40px; */
+    margin: 0 0 16px;
+  }
+
+  #course .course-list .course-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #course .course-text p {
+    /* letter-spacing: 0.18em;
+  line-height: 1.5; */
+    margin: 0 0 24px;
+  }
+
+  /* #course .course-text .price {
+  margin: 0 0 8px 0;
+} */
+
+  #course .course-text .price span { 
+  font-size: 1.25rem;
+  /* margin: 0 8px 0 0; */
+   } 
+
+  /* #course .course-text .text {
+  font-size: 0.875rem;
+} */
+
+  #course .course-item-umi {
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+    border: 1px dotted red;
+  }
+
+  /* #course .course-other { */
+  /* margin: 30px 0 0; */
+  /* padding: 0; */
+  /* } */
+
+  /* ------------------------------------------ */
+  /* セクション　一品料理 */
+  /* ------------------------------------------ */
+  #ippin .inner-wrapper {
+    height: 980px;
+    /* background-color:aliceblue;
+  color:#000; */
+  }
+
+  #ippin .inner-wrapper .section-title {
+    /* display: block; */
+    /* margin: 0 auto 16px; */
+    width: 130px;
+  }
+
+  /* #ippin .title-text {
+  margin: 0 0 24px; */
+  /* text-align: center; */
+  /* } */
+
+  #ippin .food {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    border: 1px dotted red;
+  }
+
+  #ippin .food-img {
+    /* position: static; */
+    width: 100%;
+    /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+  }
+
+  #ippin .food-img-tomato {
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px;
+  }
+
+  #ippin .food-img-egg {
+    /* width: 100%;
+  position: static; */
+    display: none;
+    /* top: 150px;
+  left: 250px;
+  z-index: 50; */
+  }
+
+  #ippin .food-list {
+    width: 100%;
+    /* display: flex;
+  flex-direction: column; */
+    margin: 0;
+  }
+
+  #ippin .food-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 16px
+  }
+
+  #ippin .food-item dt {
+    width: 65%;
+    padding: 0;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em; */
+  }
+
+  #ippin .food-item dd {
+    width: 35%;
+    padding: 0;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right; */
+  }
+
+  #ippin .food-list p {
+    /* font-size: 0.875rem; */
+    margin: 0 0 8px;
+  }
+
+
+  /* ------------------------------------------ */
+  /* セクション　のみもの */
+  /* ------------------------------------------ */
+  #drink .inner-wrapper {
+    /* background-color:gray; */
+    height: 700px;
+  }
+
+  #drink .inner-wrapper .section-title {
+    /* display: block; */
+    margin: 0 auto 16px;
+    ;
+    width: 140px;
+  }
+
+  #drink .drink-menu {
+    /* display: flex; */
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+    border: 1px dotted red;
+  }
+
+  #drink .drink-menu .drink-img {
+    width: 100%;
+  }
+
+  #drink .drink-menu .drink-img img {
+    width: 100%;
+  }
+
+  #drink .drink-menu .drink-list {
+    width: 100%;
+    /* display: flex;
+  flex-direction: column; */
+    margin: 0;
+  }
+
+  #drink .drink-menu .drink-list p {
+    /* font-size: 0.875rem;
+  line-height: 1.5; */
+    margin: 0 0 16px;
+  }
+
+  /* #drink .drink-item {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+} */
+
+  #drink .drink-item dt {
+    /* width: 65%; */
+    padding: 0;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em; */
+  }
+
+  #drink .drink-item dd {
+    /* width: 35%; */
+    padding: 0;
+    /* margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  text-align: right; */
+  }
+
+  /* ------------------------------------------ */
+  /* フッター */
+  /* ------------------------------------------ */
+  #footer .inner-wrapper {
+    /* background-image: url(../image/yakei.jpg); */
+    height: 630px;
+    /* background-repeat: no-repeat;
+  background-size: cover; */
+  }
+
+  #footer .restaurant-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px dotted red;
+  }
+
+  #footer .info-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.85);
+  }
+
+  #footer .info-text dt {
+    width: 30%;
+    padding: 0 0 20px;
+    letter-spacing: 0.08em;
+  }
+
+  #footer .info-text dd {
+    width: 70%;
+    padding: 0 0 20px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+  }
+
+  /* マップが中央そろえにならない */
+  #footer .map {
+    width: 100%;
+    margin: 0 0 24px;
+    border: 1px dotted blue;
+  }
+
+  /* #footer .copyright {
+  font-size: 0.625rem;
+  text-align:center;
+} */
+
+
+
+}
